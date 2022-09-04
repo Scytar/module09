@@ -1,0 +1,16 @@
+GET http://127.0.0.1:8080/users
+
+###
+POST http://127.0.0.1:8080/users
+Content-Type: application/json
+
+{"name":"Nuri","age":64,"uf":"SP","email":"nuri@alpha.com.br"}
+
+###
+PUT http://127.0.0.1:8080/users/4
+Content-Type: application/json
+
+{"name":"Nuricel","age":64,"uf":"SP","email":"nuricel@alpha.com.br"}
+
+###
+DELETE http://127.0.0.1:8080/users/4

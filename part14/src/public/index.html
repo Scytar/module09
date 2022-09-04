@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <!-- Google Fonts Link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+            <!-- CSS Link -->
+        <link rel="stylesheet" href="./index.css">
+
+        <title>AlphAPI</title>
+    </head>
+    <body>
+        <header>
+            <h1>AlphAPI</h1>
+        </header>
+        <main>
+            <section id="mainSection">
+                <section>
+                    <div class="indentedText">
+                        <h3>FORMULÁRIO DE CADASTRO DE USUÁRIOS</h3>
+                        <h6>Para inserir usuários na lista, preencha os dados abaixo:</h6>
+                    </div>
+                    <hr>
+                    <form action="">
+                        <input id="nameInput" type="text" placeholder="Nome Completo">
+                        <input id="emailInput" type="email" placeholder="E-mail">
+                        <button id="createUserButton">Cadastrar</button>
+                    </form>
+                </section>
+                
+                <section>
+                    <div class="indentedText">
+                        <h3>LISTA DE USUÁRIOS CADASTRADOS</h3>
+                        <h6>Abaixo, você pode ver os usuários registrados, podendo editá-los ou removê-los.</h6>
+                    </div>
+                    <hr>
+                    <table>
+                        <thead>
+                            <th class="shortColumn">#ID</th>
+                            <th class="longColumn">NOME</th>
+                            <th class="longColumn">E-MAIL</th>
+                            <th class="shortColumn">EDITAR</th>
+                            <th class="shortColumn">EXCLUIR</th>
+                        </thead>
+                        <tbody id="tableBody">
+                            <td class="shortColumn oddLine">0000</td>
+                            <td class="longColumn oddLine">carregando...</td>
+                            <td class="longColumn oddLine">carregando...</td>
+                            <td class="shortColumn oddLine">...</td>
+                            <td class="shortColumn oddLine">...</td>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+            <section id="editModalBackground">
+                <div id="editModal">
+                    <p>Atualizar contato <span id="updateLabel"></span></p>
+                    <form action="get">
+                        <input id="nameEditInput" type="text">
+                        <input id="emailEditInput" type="text">
+                        <button id="updateUserButton">Atualizar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <img class="bigImg" src="./imgs/alpha-logo.svg" alt="">
+            <img class="bigImg" src="./imgs/turing-mascot.png" alt="">
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "active": true,
+        "name": "Bruno",
+        "age": 29,
+        "uf": "RJ",
+        "email":"bruno@alpha.com.br"
+    },
+    {
+        "id": 2,
+        "active": true,
+        "name": "Kenji",
+        "age": 40,
+        "uf": "SP",
+        "email":"kenji@alpha.com.br"
+    },
+    {
+        "id": 3,
+        "active": false,
+        "name": "Matheus",
+        "age": 22,
+        "uf": "RS",
+        "email":"matheus@alpha.com.br"
+    },
+    {
+        "id": 4,
+        "active": true,
+        "name": "Samir",
+        "age": 37,
+        "uf": "SP",
+        "email":"samir@alpha.com.br"
+    },
+    {
+        "id": 5,
+        "active": true,
+        "name": "Layssa",
+        "age": 33,
+        "uf": "SP",
+        "email":"layssa@alpha.com.br"
+    }
+]
