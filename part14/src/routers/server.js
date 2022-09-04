@@ -11,7 +11,7 @@ import updateUser from "../controllers/updateUser.mjs";
 import deleteUser from "../controllers/deleteUser.mjs";
 
 const app = express();
-const HOST = "127.0.0.1"
+const HOST = "192.162.1.11"
 const PORT = 80;
 const databasePath = "E:/Downloads/Alpha EdTech/Git Repository/module09/part14/src/data/"
 const publicPath = "E:/Downloads/Alpha EdTech/Git Repository/module09/part14/src/public/"
