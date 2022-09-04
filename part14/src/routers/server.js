@@ -21,15 +21,6 @@ export let usersList = JSON.parse(fs.readFileSync(databasePath+"db.json", "utf8"
     if (err) console.log(err) 
 }))
 
-export function updateUserListInMemory(){
-    fs.readFile(databasePath+"db.json", "utf8", (err, data)=>{
-        if (err) console.log(err) 
-        usersList = JSON.parse(data);
-        console.log("User list in memory updated successfully!")
-        console.log('')
-    })
-}
-
 // Middlewares
 app.use('/', express.static(publicPath))
 app.use(bodyParser.json());
